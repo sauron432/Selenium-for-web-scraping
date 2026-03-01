@@ -14,7 +14,7 @@ def get_categories():
             categories.append({'Category': name, 'Link': link})
             
         df = pd.DataFrame(categories)
-        df.to_csv('../data/categories.csv', index=False)
+        df.to_csv('data/categories.csv', index=False)
         driver.close()
         
     except Exception as e:
